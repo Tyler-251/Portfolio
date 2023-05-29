@@ -1,0 +1,34 @@
+.slider {
+    background-color: aqua;
+    align-items: center;
+}
+
+.sleeve {
+    display: flex;
+    animation-name: sleeveslide;
+    animation-duration: 120s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sleeveslide {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-1600px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+video {
+    height: 400px;
+}
+
+@media screen and (max-width: 920px) {
+    .sleeve {
+        display: none;
+    }
+}
